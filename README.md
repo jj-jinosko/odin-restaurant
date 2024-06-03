@@ -12,6 +12,7 @@ screenshot here
 - webpack
 - src and dir structure
 - webpack.config.js file w html-webpack-plugin
+    - generates index.html file w boilerplate
 - .gitignore to ignore node_modules when committing to github
 - host completed pages on GitHub
     - deploy dist subdirectory to GitHub pages
