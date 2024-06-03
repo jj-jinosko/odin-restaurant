@@ -9,7 +9,7 @@ module.exports = {
   },
     plugins: [
         new HtmlWebpackPlugin({
-            title: 'Oat Bar',
+            template: './src/index.html',
             filename: 'index.html',
             inject: 'body',
         }),
