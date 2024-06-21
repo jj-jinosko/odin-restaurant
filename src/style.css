@@ -1,0 +1,41 @@
+/* colors */
+
+
+/* font styling */
+:root {
+
+}
+
+
+/* reset defaults */
+
+:root {
+    box-sizing: border-box;
+}
+
+img {
+    /* display: inline-block; */
+    max-width: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    min-width: 0;
+}
+
+/* General Styling */
+/* header */
+/* main */
+/* hero */
+.hero > img {
+    max-width: 800px;
+}
+
+.hero > p {
+    color: pink;
+}
+/* footer */
+
+
+/* Home Page */
