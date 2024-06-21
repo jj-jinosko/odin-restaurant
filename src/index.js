@@ -10,7 +10,7 @@ const homeBtn = document.getElementById("homeBtn");
 homeBtn.addEventListener("click", () => {console.log("heyyy")});
 
 
-const content = document.getElementById("content");
+// const content = document.getElementById("content");
 
 // ----------- Home ----------- 
 // move home screen content into module

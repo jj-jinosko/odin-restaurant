@@ -1,14 +1,15 @@
 // home.js
 
 const createHomePage = () => {
-    const main = document.createElement("div");
-    main.setAttribute("id", "home");
-    content.appendChild(main);
+
+    const home = document.createElement("div");
+    home.setAttribute("id", "home");
+    content.appendChild(home);
 
     // create and append hero div
     const hero = document.createElement("div");
     hero.setAttribute("class", "hero");
-    main.appendChild(hero);
+    home.appendChild(hero);
 
     // create and append hero header
     const slogan = document.createElement("h1");
@@ -25,6 +26,13 @@ const createHomePage = () => {
     heroImg.setAttribute("src", "../img/brooke-lark-W9OKrxBqiZA-unsplash.jpg");
     heroImg.setAttribute("alt", "delicious oatmeal and fruit");
     hero.appendChild(heroImg);
+
+
+    // create and append main home container
+    const main = document.createElement("div");
+    main.setAttribute("class", "main");
+    main.textContent = "here's where the main info will go for the homepage";
+    home.appendChild(main);
 }
 
 export default createHomePage;
