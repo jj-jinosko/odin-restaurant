@@ -6,10 +6,15 @@ const createContactPage = () => {
     contact.setAttribute("id", "contact");
     content.appendChild(contact);
 
+    // create and append contact hero 
+    const hero = document.createElement("div");
+    hero.setAttribute("class", "hero");
+    contact.appendChild(hero);
+
     // create and append contact header
     const slogan = document.createElement("h1");
     slogan.innerText = "Find a location near you!";
-    contact.appendChild(slogan);
+    hero.appendChild(slogan);
 
     // create and append contact description
     // const description = document.createElement("p");

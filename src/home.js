@@ -22,17 +22,22 @@ const createHomePage = () => {
     hero.appendChild(description);
 
     // create and append hero img
-    const heroImg = document.createElement("img");
-    heroImg.setAttribute("src", "../img/brooke-lark-W9OKrxBqiZA-unsplash.jpg");
-    heroImg.setAttribute("alt", "delicious oatmeal and fruit");
-    hero.appendChild(heroImg);
+    // const heroImg = document.createElement("img");
+    // heroImg.setAttribute("src", "../img/brooke-lark-W9OKrxBqiZA-unsplash.jpg");
+    // heroImg.setAttribute("alt", "delicious oatmeal and fruit");
+    // hero.appendChild(heroImg);
 
 
     // create and append main home container
-    const main = document.createElement("div");
-    main.setAttribute("class", "main");
-    main.textContent = "here's where the main info will go for the homepage";
-    home.appendChild(main);
+    // const main = document.createElement("div");
+    // main.setAttribute("class", "main");
+    // main.textContent = "here's where the main info will go for the homepage";
+    // home.appendChild(main);
+
+    // create and append a start order button
+    const orderBtn = document.createElement("button");
+    orderBtn.innerText = "Order Now";
+    hero.appendChild(orderBtn);
 }
 
 export default createHomePage;
