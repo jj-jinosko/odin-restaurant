@@ -1,5 +1,7 @@
 // home.js
 
+import createMenuPage from "./menu";
+
 const createHomePage = () => {
 
     const home = document.createElement("div");
@@ -38,6 +40,10 @@ const createHomePage = () => {
     const orderBtn = document.createElement("button");
     orderBtn.innerText = "Order Now";
     hero.appendChild(orderBtn);
+    orderBtn.addEventListener("click", () => {
+        content.innerHTML = "";
+        createMenuPage();
+    });
 }
 
 export default createHomePage;
