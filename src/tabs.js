@@ -8,21 +8,32 @@ const createTabs = () => {
 
     const homeBtn = document.getElementById("homeBtn");
     homeBtn.addEventListener("click", () => {
-        content.innerHTML = "";
+        clearContent();
         createHomePage();
     });
 
     const menuBtn = document.getElementById("menuBtn");
     menuBtn.addEventListener("click", () => {
-        content.innerHTML = "";
+        clearContent();
         createMenuPage();
     });
     
     const contactBtn = document.getElementById("contactBtn");
     contactBtn.addEventListener("click", () => {
-        content.innerHTML = "";
+        clearContent();
         createContactPage();
     });
+
+    function clearContent() {
+        const content = document.querySelector("#content");
+        const pageContent = document.querySelector("#home") || document.querySelector("#menu") || document.querySelector("#contact");
+        // console.log(pageContent);
+        if (pageContent) {
+            content.removeChild(pageContent);
+        }
+
+
+    }
    
 }
 

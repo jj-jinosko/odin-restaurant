@@ -1,6 +1,8 @@
 
 
 const createContactPage = () => {
+    // const content = document.getElementById("#content");
+
     // create and append contact 
     const contact = document.createElement("div");
     contact.setAttribute("id", "contact");
