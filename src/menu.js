@@ -91,17 +91,20 @@ const createMenuPage = () => {
 
                 let menuTitle = document.createElement("h3");
                 let menuDescription = document.createElement("p");
-                let menuPrice = document.createElement("button");
-                menuPrice.setAttribute("class", "menu-btn");
+                let menuPrice = document.createElement("p");
+                let menuAddtoBag = document.createElement("button");
+                menuAddtoBag.setAttribute("class", "menu-btn");
 
                 menuTitle.textContent = item.title;
                 menuDescription.textContent = item.description;
                 menuPrice.textContent = item.price;
+                menuAddtoBag.textContent = "Add to Bag";
                 
 
                 menuCard.appendChild(menuTitle);
                 menuCard.appendChild(menuDescription);
                 menuCard.appendChild(menuPrice);
+                menuCard.appendChild(menuAddtoBag);
 
             }
         }

@@ -114,6 +114,14 @@ img {
     border-bottom: 1px solid white;
 
     padding: .5rem;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.card > button {
+    /* background-color: pink; */
+    align-self: flex-end;
 }
 
 
