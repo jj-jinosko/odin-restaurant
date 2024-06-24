@@ -109,6 +109,9 @@ footer {
 /* Home Page */
 
 /* Menu Page */
+.menu-header {
+    font-weight: bolder;
+}
 
 /* card styling */
 .section {

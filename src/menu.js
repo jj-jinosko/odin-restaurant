@@ -47,11 +47,12 @@ const createMenuPage = () => {
 
     // create and append hero elements
     const heroh1 = document.createElement("h1");
-    heroh1.innerText = "This is the menu";
+    heroh1.innerText = "Menu";
     hero.appendChild(heroh1);
 
     const heroDescription = document.createElement("p");
-    heroDescription.innerText = "So good";
+    // heroDescription.innerText = "Indulge in something savory or sweet with our protein-packed oat-based cakes, bakes, and smoothies.";
+    heroDescription.innerText = "Indulge in whole food cakes and bakes";
     hero.appendChild(heroDescription);
 
     // create and append main
@@ -76,7 +77,7 @@ const createMenuPage = () => {
             // console.log(item);
             if (item.header){
                 let menuHeader = document.createElement("div");
-                menuHeader.setAttribute("class", "header");
+                menuHeader.setAttribute("class", "menu-header");
                 menuHeader.textContent = `${item.header}`;
                 main.appendChild(menuHeader);
 
