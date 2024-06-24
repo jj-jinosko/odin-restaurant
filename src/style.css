@@ -133,29 +133,32 @@ footer {
 
 
 /* button styling */
+button {
+    border-radius: 6px;
+    margin: 1em;
+    padding: .5em;
+}
 
 button {
     color: aliceblue;
-    background-color: transparent;
-    /* background-color: rgb(1, 94, 175); */
-    border: 1px solid aliceblue;
-
-    border-radius: 6px;
-
-    /* line-height: 1em; */
-    margin: 1em;
-    padding: .5em;
-    
+    background-color: rgb(13, 13, 13, .4);
+    border: 1px solid aliceblue;  
 }
 
 button:hover {
-    /* color: rgb(159, 208, 250); */
-    /* background-color: aliceblue; */
-    border: 1px solid rgb(1, 94, 175);
+    color: rgb(13, 13, 13);
+    background-color: rgb(227, 240, 251);
+    border: 1px solid black;
 }
 
 .menu-btn {
-    background-color: transparent;
-    color: rgb(13, 13, 13, .8);
+    color: rgb(13, 13, 13);
+    background-color: rgb(227, 240, 251, .7);
     border: 1px solid black;
+}
+
+.menu-btn:hover {
+    color: aliceblue;
+    background-color: rgb(13, 13, 13, .8);
+    border: 1px solid aliceblue;
 }
