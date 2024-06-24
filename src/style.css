@@ -79,7 +79,12 @@ img {
     /* grid-template-columns: 3fr 1fr; */
     /* grid-template-rows: 1fr 1fr; */
 }
+
 /* header */
+/* header {
+    position: fixed;
+    top: 0;
+} */
 
 /* main */
 
@@ -97,7 +102,9 @@ img {
     
 }
 /* footer */
-
+footer {
+    min-height: 5rem;
+}
 
 /* Home Page */
 
