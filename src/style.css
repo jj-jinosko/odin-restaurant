@@ -3,7 +3,10 @@
 
 /* font styling */
 :root {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-family: 'Courier New', Courier, monospace;
+    /* font-family:Verdana, Geneva, Tahoma, sans-serif; */
+    /* font-family:Georgia, 'Times New Roman', Times, serif; */
 }
 
 h1 {
@@ -97,6 +100,15 @@ img {
 
 
 /* Home Page */
+
+/* Menu Page */
+
+/* card styling */
+
+.card {
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr; */
+}
 
 
 /* button styling */

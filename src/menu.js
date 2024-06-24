@@ -1,5 +1,26 @@
-
 const createMenuPage = () => {
+
+    const menuItems = [
+            {
+                header: "Cakes"
+            },
+            {
+                title: "Peanut Butter Chocolate Pecan Banana",
+                description: "Peanut Butter Chocolate Pecan Banana",
+                price: "5.00"
+    
+            },
+            {
+                header: "Bakes"
+            },
+            {
+                title: "Apple Pie",
+                description: "roasty apples and cinnamon with walnuts",
+                price: "5.00"
+    
+            }
+    ]
+
     const menu = document.createElement("div");
     menu.setAttribute("id", "menu");
     menu.setAttribute("class", "main");
@@ -24,15 +45,45 @@ const createMenuPage = () => {
     main.setAttribute("class", "main");
     menu.appendChild(main);
 
-    const item1 = document.createElement("div");
-    item1.setAttribute("class", "menu-card");
-    item1.innerText = "this is the first menu item card. add photo, name, description, price, add to bag button";
-    main.appendChild(item1);
+    // const item1 = document.createElement("div");
+    // item1.setAttribute("class", "menu-card");
+    // item1.innerText = "this is the first menu item card. add photo, name, description, price, add to bag button";
+    // main.appendChild(item1);
 
-    const item2 = document.createElement("div");
-    item2.setAttribute("class", "menu-card");
-    item2.innerText = "this is the second menu item card.";
-    main.appendChild(item2);
+    // const item2 = document.createElement("div");
+    // item2.setAttribute("class", "menu-card");
+    // item2.innerText = "this is the second menu item card.";
+    // main.appendChild(item2);
+
+    // iterate over menu array
+    for (let item of menuItems){
+        console.log(item);
+        if (item.header){
+            let menuHeader = document.createElement("div");
+            menuHeader.setAttribute("class", "header");
+            menuHeader.textContent = `${item.header}`;
+            main.appendChild(menuHeader);
+        }
+        if (item.title){
+            let menuCard = document.createElement("div");
+            menuCard.setAttribute("class", "card");
+            main.appendChild(menuCard);
+
+            let menuTitle = document.createElement("h3");
+            let menuDescription = document.createElement("p");
+            let menuPrice = document.createElement("button");
+
+            menuTitle.textContent = item.title;
+            menuDescription.textContent = item.description;
+            menuPrice.textContent = item.price;
+            
+
+            menuCard.appendChild(menuTitle);
+            menuCard.appendChild(menuDescription);
+            menuCard.appendChild(menuPrice);
+
+        }
+    }
 };
 
 export default createMenuPage;
