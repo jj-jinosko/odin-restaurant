@@ -15,12 +15,14 @@ const createHomePage = () => {
 
     // create and append hero header
     const slogan = document.createElement("h1");
-    slogan.innerText = "Healthy Never Tasted So Sweet";
+    // slogan.innerText = "Healthy Never Tasted So Sweet";
+    slogan.innerText = "The Oat Bar"
     hero.appendChild(slogan);
 
     // create and append hero description
     const description = document.createElement("p");
-    description.innerText ="Indulge in something savory or sweet with our protein-packed oat-based cakes, bakes, and smoothies.";
+    // description.innerText ="Indulge in something savory or sweet with our protein-packed oat-based cakes, bakes, and smoothies.";
+    description.innerText = "Healthy Has Never Tasted So Sweet"
     hero.appendChild(description);
 
     // create and append hero img

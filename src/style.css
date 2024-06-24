@@ -110,7 +110,7 @@ img {
 }
 
 .card {
-    /* background-color:  */
+    background-color: rgb(184, 205, 223, .7);
     border-bottom: 1px solid white;
 
     padding: .5rem;
@@ -137,4 +137,10 @@ button:hover {
     /* color: rgb(159, 208, 250); */
     /* background-color: aliceblue; */
     border: 1px solid rgb(1, 94, 175);
+}
+
+.menu-btn {
+    background-color: transparent;
+    color: rgb(13, 13, 13, .8);
+    border: 1px solid black;
 }
