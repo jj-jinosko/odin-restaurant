@@ -104,6 +104,10 @@ img {
 /* Menu Page */
 
 /* card styling */
+.section {
+    /* display: grid;
+    grid-template-columns: 1fr 1fr; */
+}
 
 .card {
     /* background-color:  */

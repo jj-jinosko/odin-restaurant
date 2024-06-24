@@ -76,9 +76,13 @@ const createMenuPage = () => {
             // console.log(item);
             if (item.header){
                 let menuHeader = document.createElement("div");
-                menuHeader.setAttribute("class", "section");
+                menuHeader.setAttribute("class", "header");
                 menuHeader.textContent = `${item.header}`;
                 main.appendChild(menuHeader);
+
+                let menuSection = document.createElement("div");
+                menuSection.setAttribute("class", "section");
+                main.appendChild(menuSection);
             }
             if (item.title){
                 let menuCard = document.createElement("div");
