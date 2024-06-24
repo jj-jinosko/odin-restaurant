@@ -1,6 +1,7 @@
 const createMenuPage = () => {
 
     const menuItems = [
+        [
             {
                 header: "Cakes"
             },
@@ -11,6 +12,14 @@ const createMenuPage = () => {
     
             },
             {
+                title: "Cherry Bomb",
+                description: "Cherries, blueberries, blackberries, raspberries with lemon curd",
+                price: "5.00"
+    
+            },
+        ],
+        [
+            {
                 header: "Bakes"
             },
             {
@@ -18,12 +27,17 @@ const createMenuPage = () => {
                 description: "roasty apples and cinnamon with walnuts",
                 price: "5.00"
     
+            },            {
+                title: "Strawberries and Cream",
+                description: "Sweet strawberries, passionfruit, and a heavy whipped cream",
+                price: "5.00"
+    
             }
+        ],
     ]
 
     const menu = document.createElement("div");
     menu.setAttribute("id", "menu");
-    menu.setAttribute("class", "main");
     content.appendChild(menu);
 
     // create and append hero
@@ -56,32 +70,35 @@ const createMenuPage = () => {
     // main.appendChild(item2);
 
     // iterate over menu array
-    for (let item of menuItems){
-        console.log(item);
-        if (item.header){
-            let menuHeader = document.createElement("div");
-            menuHeader.setAttribute("class", "header");
-            menuHeader.textContent = `${item.header}`;
-            main.appendChild(menuHeader);
-        }
-        if (item.title){
-            let menuCard = document.createElement("div");
-            menuCard.setAttribute("class", "card");
-            main.appendChild(menuCard);
+    for (let section of menuItems){
+        // console.log('section', section);
+        for (let item of section){
+            // console.log(item);
+            if (item.header){
+                let menuHeader = document.createElement("div");
+                menuHeader.setAttribute("class", "section");
+                menuHeader.textContent = `${item.header}`;
+                main.appendChild(menuHeader);
+            }
+            if (item.title){
+                let menuCard = document.createElement("div");
+                menuCard.setAttribute("class", "card");
+                main.lastChild.appendChild(menuCard);
 
-            let menuTitle = document.createElement("h3");
-            let menuDescription = document.createElement("p");
-            let menuPrice = document.createElement("button");
+                let menuTitle = document.createElement("h3");
+                let menuDescription = document.createElement("p");
+                let menuPrice = document.createElement("button");
 
-            menuTitle.textContent = item.title;
-            menuDescription.textContent = item.description;
-            menuPrice.textContent = item.price;
-            
+                menuTitle.textContent = item.title;
+                menuDescription.textContent = item.description;
+                menuPrice.textContent = item.price;
+                
 
-            menuCard.appendChild(menuTitle);
-            menuCard.appendChild(menuDescription);
-            menuCard.appendChild(menuPrice);
+                menuCard.appendChild(menuTitle);
+                menuCard.appendChild(menuDescription);
+                menuCard.appendChild(menuPrice);
 
+            }
         }
     }
 };
