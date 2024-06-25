@@ -23,7 +23,7 @@ Check it out! link here
 
 |  Desktop | Mobile   |
 |----------|----------|
-| ![desktop](./screenshot/about.png)|![mobile](./screenshot/about-mobile.png)|
+| ![desktop](./screenshot/contact.png)|![mobile](./screenshot/contact-mobile.png)|
 
 ## Skills
 - HTML
