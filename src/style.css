@@ -13,10 +13,9 @@ h1 {
     font-size: clamp(3rem, 6vw, 100rem);
 }
 
-p {
-    /* color: rgb(195, 193, 193); */
+/* p {
     font-size: clamp(1.5rem, 2vw, 100rem);
-}
+} */
 
 button {
     font-size: clamp(1rem, 1vw, 100rem);
@@ -99,7 +98,7 @@ img {
 } */
 
 .hero > p {
-    
+    font-size: clamp(1.5rem, 2vw, 100rem);
 }
 /* footer */
 footer {
@@ -112,6 +111,10 @@ footer {
 .menu-header {
     font-weight: bolder;
 }
+
+/* .menu-description {
+    font-size: clamp(1rem, .5vw, 100rem);
+} */
 
 /* card styling */
 .section {

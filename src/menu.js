@@ -6,7 +6,7 @@ const createMenuPage = () => {
                 header: "Cakes"
             },
             {
-                title: "Peanut Butter Chocolate Pecan Banana",
+                title: "Peanut Butter Cup",
                 description: "Peanut Butter Chocolate Pecan Banana",
                 price: "5.00"
     
@@ -92,6 +92,7 @@ const createMenuPage = () => {
 
                 let menuTitle = document.createElement("h3");
                 let menuDescription = document.createElement("p");
+                menuDescription.setAttribute("class", "menu-description");
                 let menuPrice = document.createElement("p");
                 let menuAddtoBag = document.createElement("button");
                 menuAddtoBag.setAttribute("class", "menu-btn");
