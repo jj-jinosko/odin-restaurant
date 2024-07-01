@@ -3,7 +3,7 @@ The Odin Project: Restaurant page
 
 Welcome to The Oat Bar, a grab-and-go healthy breakfast place serving all things oats.
 
-Check it out! link here
+[Check it out!](https://jj-jinosko.github.io/odin-restaurant/)
 
 ## Model 
 ### Landing Page
